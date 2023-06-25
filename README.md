@@ -5,4 +5,5 @@ Note: you will need to set up an Azure Subcription, Azure DataBricks Workspace.
 
 For displaying the output, a demo app is created via AppSheet. Please check it on the link: 
 https://www.appsheet.com/start/3757a841-4cca-43fe-8b36-07b423855c8f 
+For some reference, you can check the attached images from the app. 
 
