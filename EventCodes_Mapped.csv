@@ -1,0 +1,18 @@
+﻿status_code,description_token,CargoIQCODE,CargoIQDescription
+FOH,Freight on Hand,FOH,Freight on Hand
+LDP,Flight Load Plan,RCS,Ready for Carriage
+MAN,Shipment manifested,FOW,Freight out Warehouse
+DEP,Shipment Departed,DEP,Departed
+ARR,Shipment arrived,ARR,Arrived
+RCF,Shipment  received from flight,RCF ,Received Cargo from Flight
+NFD,Shipment notified for delivery,NFD,Notified for Delivery
+DLV,Shipment Delivered,DLV,Delivered Destination Airport
+DIS,Discrepancies,DIS,Discrepancies
+DIS,Irregularity,DIS,Irregularity
+,,POD,Proof of Delivery
+,,TPN,Third Party Notification
+,,RIW,Received Import Warehouse
+,,RIH,Received Import Hub
+,,DIH,Departed Import Hub
+,,POD,Proof of Delivery
+,,OFD,Out for Delivery
