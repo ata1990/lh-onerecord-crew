@@ -1,1 +1,118 @@
+Below may be find all the libraries used for the ML models:
+irregularity_prediction requirements: 
 
+
+ 
+
+from pyspark.sql import functions as F
+
+from pyspark.sql.window import Window
+
+from pyspark.sql.functions import col, regexp_replace, abs
+
+from pyspark.ml import Pipeline
+
+from pyspark.sql.functions import dayofweek, hour, month, year, weekofyear, dayofmonth
+
+from pyspark.sql.types import TimestampType
+
+import mlflow
+
+import databricks.automl_runtime
+
+from sklearn.compose import ColumnTransformer
+
+from sklearn.impute import SimpleImputer
+
+from sklearn.pipeline import Pipeline
+
+from sklearn.preprocessing import OneHotEncoder as SklearnOneHotEncoder
+
+from sklearn.preprocessing import FunctionTransformer, StandardScaler
+
+from databricks.automl_runtime.sklearn import OneHotEncoder
+
+import pandas as pd
+
+import numpy as np
+
+from mlflow.models import Model, infer_signature, ModelSignature
+
+from mlflow.pyfunc import PyFuncModel
+
+from mlflow import pyfunc
+
+from sklearn import set_config
+
+from hyperopt import hp, tpe, fmin, STATUS_OK, Trials
+
+from sklearn.ensemble import RandomForestClassifier
+
+import sklearn
+
+from sklearn.linear_model import LogisticRegression
+
+from xgboost import XGBClassifier
+
+from sklearn.preprocessing import LabelEncoder
+
+from databricks.automl_runtime.sklearn import TransformedTargetClassifier
+
+from pyspark.sql.functions import col, regexp_replace, when, monotonically_increasing_id, dayofweek, hour, month, weekofyear, lead, unix_timestamp
+
+import mlflow.sklearn
+
+ 
+
+ 
+
+estimated_time_of_POD requirements: 
+
+
+ 
+
+from pyspark.sql import functions as F
+
+from pyspark.sql.window import Window
+
+from pyspark.sql.functions import dayofweek, hour, month, year, weekofyear, dayofmonth
+
+from pyspark.sql.types import TimestampType
+
+from pyspark.sql import SparkSession
+
+from pyspark.sql.functions import col, lag, when, lead, coalesce
+
+from pyspark.sql.functions import expr
+
+from sklearn.compose import ColumnTransformer
+
+from sklearn.impute import SimpleImputer
+
+from sklearn.pipeline import Pipeline
+
+from sklearn.preprocessing import FunctionTransformer, StandardScaler
+
+from databricks.automl_runtime.sklearn import OneHotEncoder
+
+from xgboost import XGBRegressor
+
+import pandas as pd
+
+import numpy as np
+
+import mlflow
+
+from mlflow.models import Model, infer_signature, ModelSignature
+
+from databricks.automl_runtime.sklearn.column_selector import ColumnSelector
+
+from mlflow.pyfunc import PyFuncModel
+
+from mlflow import pyfunc
+
+import sklearn
+
+from sklearn import set_config
+
+from hyperopt import hp, tpe, fmin, STATUS_OK, Trials
